@@ -1,0 +1,1822 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/21/2017 3:34:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-DE336EN"
+  DTS:CreatorName="DESKTOP-DE336EN\Vicky"
+  DTS:DTSID="{6558617B-D03D-4FC1-A2F4-936CF40692B2}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="127"
+  DTS:VersionGUID="{CCDC3932-C7E6-4E08-8630-63DD18E0CDC5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones HTTP]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{10C4788E-1542-455B-88DF-06D82E1B0DF7}"
+      DTS:ObjectName="Administrador de conexiones HTTP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://www.banxico.org.mx/DgieWSWeb/DgieWS?WSDL">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://www.banxico.org.mx/DgieWSWeb/DgieWS?WSDL">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB0k3PYJr/RspVY8WYBsK4xkZ8FaCuH0/MOARzL/rNSSAAAAAAOgAAAAAIAACAAAADWzKKR/0X2NYM8TGn7ptoUkBbR/ECleL2p8y8ro3PnHRAAAABe9TWbRDAo/Ecv6yb1gTTrQAAAAM836qtfuSZUgsFvpA/s09uuYnkPUtbslm01T+RA/1T7YXn1BWsw8BuZOUQROziuMcFD1N7JLhrdIhctZ3m+CBM</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLPz/WDN5SMrwI9j40nYXgpURB5fDGZffGzNm+oA135QAAAAAOgAAAAAIAACAAAADlk1hFMVf9ymur87iwvP/vhYPZw2qEVpaUur8efRGCjRAAAACYJdQIiYbWRNsy4fMOSl5aQAAAAP1JHrpvHoAZ9ZReUWBQslBBxXQiXKYRNYGfIPrRYLq4n0e1bEDQy1bWpD0cMmz7BhsMbItTM4npOkbGP+hhuI0</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones HTTP 1]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{2970E7E6-4004-4101-9CCA-0E1A01023E8E}"
+      DTS:ObjectName="Administrador de conexiones HTTP 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="https://api.bls.gov/publicAPI/v2/timeseries/data/WPU00000000">
+          <DTS:HttpConnection
+            DTS:ServerURL="https://api.bls.gov/publicAPI/v2/timeseries/data/WPU00000000">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACXvYIZ1jhjP/FRi2Hol4b6qCcL/8hkOQqfMr+X2OK9HgAAAAAOgAAAAAIAACAAAADJR2LN5EwxFiaOAhhSkj+u1LbzNyitDpu4vNaf6uqiERAAAAB7eOhAM8mN8kjKTQdOjKMpQAAAADU4X+Vy7ssb4/cpfU5sE4OwaLrex++jLZmdj+XBrBHfbANm474Ujgs8ZHDGUus+fZkHWLmO25qV1ugHEZ2bll4</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAceEgceXeerqbMeKah77tI50GtsCPJbiuLChuo1pzUXwAAAAAOgAAAAAIAACAAAAC4xWxEZ8/z8Rlo5vR1XGSb0kAkBCgdDXkUdD6XlBKzIhAAAAD7liAs8WZ/tUNxnU3cvtdXQAAAAEzaJrvPBv2QovAJVMBYn5E1qhnAlLutvwTQDMKNYMQGRtNmvM+KeutJLZEnkPv+54rjgaWtRqdh6+MRv7rxQxg</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="4"
+      DTS:DTSID="{49DFABE5-87B4-4AC6-9A27-C035953A580B}"
+      DTS:ObjectName="Parámetro">
+      <DTS:Property
+        DTS:DataType="4"
+        DTS:Name="ParameterValue">0.</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D105001D-355D-4897-B5FD-F813BE24D15E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="uri">
+      <DTS:VariableValue
+        DTS:DataType="8">http://www.banxico.org.mx/DgieWSWeb/DgieWS?WSDL</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{07D2FE5D-EE17-4044-B487-0E9D655837E8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{86C82BF0-2F59-4A50-89B2-9F4F3D3BD805}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F4FF3D38-2124-41D0-9A19-C6D687C36152}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7927A95D-6053-4772-B4C1-FFF3CC1E842E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="xml_file">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Script"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Tarea Script"
+      DTS:DTSID="{D2C66FCF-DE63-417D-B01E-14C734275E80}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Script"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_baafd8a65b2c42569e2d51ab19595690"
+          VSTAMajorVersion="3"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::uri"
+          ReadWriteVariables="User::xml_file">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Service References\ServiceReference1\configuration.svcinfo"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;DgieWSPortSoapBinding&quot; /&gt;" bindingType="basicHttpBinding" name="DgieWSPortSoapBinding" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://www.banxico.org.mx/DgieWSWeb/DgieWS&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;DgieWSPortSoapBinding&quot; contract=&quot;ServiceReference1.DgieWSPort&quot; name=&quot;DgieWSPort&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://www.banxico.org.mx/DgieWSWeb/DgieWS&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;DgieWSPortSoapBinding&quot; contract=&quot;ServiceReference1.DgieWSPort&quot; name=&quot;DgieWSPort&quot; /&gt;" contractName="ServiceReference1.DgieWSPort" name="DgieWSPort" />
+  </endpoints>
+</configurationSnapshot>]]></ProjectItem>
+          <ProjectItem
+            Name="Service References\ServiceReference1\Reference.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//     Runtime Version:4.0.30319.42000
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690.ServiceReference1 {
+    
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.dgie.banxico.org.mx", ConfigurationName="ServiceReference1.DgieWSPort")]
+    public interface DgieWSPort {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="result")]
+        string reservasInternacionalesBanxico();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="result")]
+        string tasasDeInteresBanxico();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="result")]
+        string tiposDeCambioBanxico();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="result")]
+        string udisBanxico();
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface DgieWSPortChannel : ST_baafd8a65b2c42569e2d51ab19595690.ServiceReference1.DgieWSPort, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class DgieWSPortClient : System.ServiceModel.ClientBase<ST_baafd8a65b2c42569e2d51ab19595690.ServiceReference1.DgieWSPort>, ST_baafd8a65b2c42569e2d51ab19595690.ServiceReference1.DgieWSPort {
+        
+        public DgieWSPortClient() {
+        }
+        
+        public DgieWSPortClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public DgieWSPortClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public DgieWSPortClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public DgieWSPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public string reservasInternacionalesBanxico() {
+            return base.Channel.reservasInternacionalesBanxico();
+        }
+        
+        public string tasasDeInteresBanxico() {
+            return base.Channel.tasasDeInteresBanxico();
+        }
+        
+        public string tiposDeCambioBanxico() {
+            return base.Channel.tiposDeCambioBanxico();
+        }
+        
+        public string udisBanxico() {
+            return base.Channel.udisBanxico();
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_baafd8a65b2c42569e2d51ab19595690.Properties.Settings.get_Default():ST_baafd8a65b2c42569e2d51ab19595690.Properties.Sett" +
+    "ings")]
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:CodeName>ST_baafd8a65b2c42569e2d51ab19595690</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
+		<msb:DisplayName>ST_baafd8a65b2c42569e2d51ab19595690</msb:DisplayName>
+		<msb:ProjectId>{9079A515-8AB8-4C55-8CBA-D293BF761FF8}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_baafd8a65b2c42569e2d51ab19595690.csproj"/>
+		<msb:Folder Include="Service References\"/>
+		<msb:Folder Include="ContextDB\"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Service References\ServiceReference1\DgieWS.wsdl"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="ContextDB\Repository.cs"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="app.config"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+		<msb:File Include="Service References\ServiceReference1\configuration91.svcinfo"/>
+		<msb:File Include="Service References\ServiceReference1\configuration.svcinfo"/>
+		<msb:File Include="Service References\ServiceReference1\Reference.svcmap"/>
+		<msb:File Include="Service References\ServiceReference1\Reference.cs"/>
+		<msb:File Include="Banxico.cs"/>
+		<msb:File Include="ServiceBanxico.cs"/>
+		<msb:File Include="ContextDB\ConexionBD.cs"/>
+		<msb:Breakpoint Include="2143e1385b1c41b8ac5db14edcc81254">
+			<msb:FileName>ScriptMain.cs</msb:FileName>
+			<msb:ColumnNumber>13</msb:ColumnNumber>
+			<msb:Enabled>True</msb:Enabled>
+			<msb:LineNumber>131</msb:LineNumber>
+			<msb:Condition></msb:Condition>
+			<msb:ConditionType>1</msb:ConditionType>
+			<msb:Language>C#</msb:Language>
+			<msb:HitCountType>1</msb:HitCountType>
+			<msb:HitCountTarget>1</msb:HitCountTarget>
+		</msb:Breakpoint>
+		<msb:Breakpoint Include="a09f9d00839c47e3bac0e9389770c787">
+			<msb:FileName>ScriptMain.cs</msb:FileName>
+			<msb:ColumnNumber>13</msb:ColumnNumber>
+			<msb:Enabled>True</msb:Enabled>
+			<msb:LineNumber>212</msb:LineNumber>
+			<msb:Condition></msb:Condition>
+			<msb:ConditionType>1</msb:ConditionType>
+			<msb:Language>C#</msb:Language>
+			<msb:HitCountType>1</msb:HitCountType>
+			<msb:HitCountTarget>1</msb:HitCountTarget>
+		</msb:Breakpoint>
+		<msb:Breakpoint Include="986b678ab8a443bcaa938205114185bc">
+			<msb:FileName>ScriptMain.cs</msb:FileName>
+			<msb:ColumnNumber>13</msb:ColumnNumber>
+			<msb:Enabled>True</msb:Enabled>
+			<msb:LineNumber>152</msb:LineNumber>
+			<msb:Condition></msb:Condition>
+			<msb:ConditionType>1</msb:ConditionType>
+			<msb:Language>C#</msb:Language>
+			<msb:HitCountType>1</msb:HitCountType>
+			<msb:HitCountTarget>1</msb:HitCountTarget>
+		</msb:Breakpoint>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_baafd8a65b2c42569e2d51ab19595690")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_baafd8a65b2c42569e2d51ab19595690")]
+[assembly: AssemblyCopyright("Copyright @  2017")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="ST_baafd8a65b2c42569e2d51ab19595690.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4991F83E-5AB0-445D-A5E8-55AAE16138B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_baafd8a65b2c42569e2d51ab19595690</RootNamespace>
+    <AssemblyName>ST_baafd8a65b2c42569e2d51ab19595690</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Banxico.cs" />
+    <Compile Include="ContextDB\ConexionBD.cs" />
+    <Compile Include="ContextDB\Repository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceBanxico.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Service References\ServiceReference1\DgieWS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\InstallDir#\devenv.exe" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST120</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ContextDB\Repository.cs"
+            Encoding="UTF8"><![CDATA[using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+using System.Data;
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690.ContextDB
+{
+    public class Repository : IDisposable
+    {
+        private ConexionBD conn;
+        private bool disposed;
+
+        public Repository()
+        {
+            conn = new ConexionBD();
+        }
+
+        private SqlCommand GetParameter(SqlCommand command, List<SqlParameter> parameters)
+        {
+            if (parameters != null)
+            {
+                foreach (var parameter in parameters)
+                    command.Parameters.Add(parameter);
+            }
+
+            return command;
+        }
+
+        public DataTable ExecuteQuerySP(string nameSP, List<SqlParameter> parameters)
+        {
+            conn.Connection.Open();
+            var dataTable = new DataTable();
+
+            var command = new SqlCommand(nameSP, conn.Connection);
+            command = GetParameter(command, parameters);
+
+            var adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+            adapter.Fill(dataTable);
+
+            conn.Connection.Close();
+            //conn.Connection.Dispose();
+            return dataTable;
+        }
+
+        public int ExecuteQueryText(string nameSP, List<SqlParameter> parameters)
+        {
+            conn.Connection.Open();
+            var command = new SqlCommand(nameSP, conn.Connection);
+            command = GetParameter(command, parameters);
+
+            var result = command.ExecuteNonQuery();
+            conn.Connection.Close();
+            return result;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+
+            }
+
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    conn.Connection.Close();
+                }
+            }
+
+            disposed = true;
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Service References\ServiceReference1\Reference.svcmap"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0ebbba26-6901-49fe-afe5-4dd58b9c08ce" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.banxico.org.mx/DgieWSWeb/DgieWS?WSDL" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DgieWS.wsdl" MetadataType="Wsdl" ID="f1f18851-9b93-4928-8047-a9179375fb14" SourceId="1" SourceUrl="http://www.banxico.org.mx/DgieWSWeb/DgieWS?WSDL" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_baafd8a65b2c42569e2d51ab19595690.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_baafd8a65b2c42569e2d51ab19595690.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_baafd8a65b2c42569e2d51ab19595690.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_baafd8a65b2c42569e2d51ab19595690.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Xml;
+using System.Collections.Generic;
+using System.Linq;
+using System.ServiceModel;
+using ST_baafd8a65b2c42569e2d51ab19595690.ServiceReference1;
+using System.Globalization;
+using ST_baafd8a65b2c42569e2d51ab19595690.ContextDB;
+using System.Text;
+#endregion
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690
+{
+    /// <summary>
+    /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+    /// or parent of this class.
+    /// </summary>
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+    {
+        #region Help:  Using Integration Services variables and parameters in a script
+        /* To use a variable in this script, first ensure that the variable has been added to 
+         * either the list contained in the ReadOnlyVariables property or the list contained in 
+         * the ReadWriteVariables property of this script task, according to whether or not your
+         * code needs to write to the variable.  To add the variable, save this script, close this instance of
+         * Visual Studio, and update the ReadOnlyVariables and 
+         * ReadWriteVariables properties in the Script Transformation Editor window.
+         * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+         * 
+         * Example of reading from a variable:
+         *  DateTime startTime = (DateTime) Dts.Variables["System::StartTime"].Value;
+         * 
+         * Example of writing to a variable:
+         *  Dts.Variables["User::myStringVariable"].Value = "new value";
+         * 
+         * Example of reading from a package parameter:
+         *  int batchId = (int) Dts.Variables["$Package::batchId"].Value;
+         *  
+         * Example of reading from a project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].Value;
+         * 
+         * Example of reading from a sensitive project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].GetSensitiveValue();
+         * */
+
+        #endregion
+
+        #region Help:  Firing Integration Services events from a script
+        /* This script task can fire events for logging purposes.
+         * 
+         * Example of firing an error event:
+         *  Dts.Events.FireError(18, "Process Values", "Bad value", "", 0);
+         * 
+         * Example of firing an information event:
+         *  Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, ref fireAgain)
+         * 
+         * Example of firing a warning event:
+         *  Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0);
+         * */
+        #endregion
+
+        #region Help:  Using Integration Services connection managers in a script
+        /* Some types of connection managers can be used in this script task.  See the topic 
+         * "Working with Connection Managers Programatically" for details.
+         * 
+         * Example of using an ADO.Net connection manager:
+         *  object rawConnection = Dts.Connections["Sales DB"].AcquireConnection(Dts.Transaction);
+         *  SqlConnection myADONETConnection = (SqlConnection)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Sales DB"].ReleaseConnection(rawConnection);
+         *
+         * Example of using a File connection manager
+         *  object rawConnection = Dts.Connections["Prices.zip"].AcquireConnection(Dts.Transaction);
+         *  string filePath = (string)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Prices.zip"].ReleaseConnection(rawConnection);
+         * */
+        #endregion
+
+
+        /// <summary>
+        /// This method is called when this script task executes in the control flow.
+        /// Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+        /// To open Help, press F1.
+        /// </summary>
+
+        private const string spBanxicoCurrent = "usp_ihm_consulta_datos_banxico";
+        private const string idSerie = "SF43718";
+        private Repository rp;
+
+        public void Main()
+        {
+            // TODO: Add your code here
+            rp = new Repository();
+
+            var resutl = false;
+            var lstSw = new List<Banxico>();
+
+
+            //obtenert uri sw banxico
+            ServiceBanxico sw_banxico = new ServiceBanxico(Dts.Variables["uri"].Value.ToString());
+
+            //obetner los datos actuales de la db
+            var dtCurrent = rp.ExecuteQuerySP(spBanxicoCurrent, null);
+
+            //compare id serie
+            do
+            {
+                //Lamar sw banxico
+                lstSw = sw_banxico.GetListExchangeRates();
+                //comparar id actual DB con id serie sw
+                resutl = CompareValueSerie(dtCurrent, lstSw);
+
+            } while (resutl);
+
+            //insertar datos nuevos
+            InsertNewExchangeRates(lstSw);
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+
+        }
+
+        private bool CompareValueSerie(DataTable dtCurrent, List<Banxico> lstSw)
+        {
+            if (dtCurrent.Rows.Count == 0) return false;
+            //Obtiene el valor del  FIX en la BD
+            var idSerieCurrent = dtCurrent.AsEnumerable().
+                FirstOrDefault(x => x["Id_Serie"].Equals(idSerie)).
+                ItemArray[5].ToString();
+
+            var testIdSerie = lstSw.FirstOrDefault(s => s.Id_Serie.Equals(idSerie)).Valor.ToString();
+
+            //Obtiene el valor del  FIX del xml de Banxico 
+            /*var idSerieSw = dtBanxicoSW.AsEnumerable().
+                FirstOrDefault(x => x["Id_Serie"].Equals("SF43718")).
+                ItemArray[4].ToString();*/
+
+            return idSerieCurrent.Equals(testIdSerie) ? true : false;
+        }
+
+        //Crear DataTable para insertar los tipos de cambios
+        private void DataTableExchangeRate()
+        {
+            DataTable dt_banxico = new DataTable();
+            dt_banxico.Clear();
+            dt_banxico.Columns.Add("Id_Serie", typeof(string));
+            dt_banxico.Columns.Add("Fecha_inserccion", typeof(DateTime));
+            dt_banxico.Columns.Add("Fecha", typeof(DateTime));
+            dt_banxico.Columns.Add("Titulo", typeof(string));
+            dt_banxico.Columns.Add("Valor", typeof(decimal));
+            dt_banxico.Columns.Add("Xml", typeof(string));
+        }
+
+        private void InsertNewExchangeRates(List<Banxico> lstExchangeRates)
+        {
+            StringBuilder query = new StringBuilder();
+            query.Append("INSERT INTO ");
+            query.Append("dbo.Datos_Banxico( Id_Serie, Fecha_inserccion, Fecha, Titulo, Valor, Xml) ");
+            query.Append("VALUES(@_Id_Serie,@_Fecha_inserccion, @_Fecha, @_Titulo, @_Valor, @_Xml)");
+
+           
+
+            foreach (var item in lstExchangeRates)
+            {
+                var parameter = new List<SqlParameter>();
+
+                parameter.Add(new SqlParameter("@_Id_Serie", SqlDbType.VarChar)
+                {
+                    Value = item.Id_Serie.ToString()
+                });
+
+                parameter.Add(new SqlParameter("@_Fecha_inserccion", SqlDbType.DateTime)
+                {
+                    Value = item.Fecha_inserccion.ToString()
+                });
+
+                parameter.Add(new SqlParameter("@_Fecha", SqlDbType.DateTime)
+                {
+                        Value = item.Fecha.ToString()
+                });
+
+                parameter.Add(new SqlParameter("@_Titulo", SqlDbType.VarChar)
+                {
+                    Value = item.Titulo
+                });
+
+                parameter.Add(new SqlParameter("@_Valor", SqlDbType.Decimal)
+                {
+                    Value = item.Valor
+                });
+
+                parameter.Add(new SqlParameter("@_Xml", SqlDbType.VarChar)
+                {
+                    Value = item.xml
+                });
+
+                var dtCurrent = rp.ExecuteQueryText(query.ToString(), parameter);
+            }
+
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Service References\ServiceReference1\DgieWS.wsdl"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://ws.dgie.banxico.org.mx" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://ws.dgie.banxico.org.mx" targetNamespace="http://ws.dgie.banxico.org.mx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="reservasInternacionalesBanxicoResponse">
+    <wsdl:part name="result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="reservasInternacionalesBanxicoRequest" />
+  <wsdl:message name="tiposDeCambioBanxicoRequest" />
+  <wsdl:message name="tasasDeInteresBanxicoRequest" />
+  <wsdl:message name="udisBanxicoRequest" />
+  <wsdl:message name="tiposDeCambioBanxicoResponse">
+    <wsdl:part name="result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="udisBanxicoResponse">
+    <wsdl:part name="result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="tasasDeInteresBanxicoResponse">
+    <wsdl:part name="result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="DgieWSPort">
+    <wsdl:operation name="reservasInternacionalesBanxico">
+      <wsdl:input name="reservasInternacionalesBanxicoRequest" message="impl:reservasInternacionalesBanxicoRequest" />
+      <wsdl:output name="reservasInternacionalesBanxicoResponse" message="impl:reservasInternacionalesBanxicoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tasasDeInteresBanxico">
+      <wsdl:input name="tasasDeInteresBanxicoRequest" message="impl:tasasDeInteresBanxicoRequest" />
+      <wsdl:output name="tasasDeInteresBanxicoResponse" message="impl:tasasDeInteresBanxicoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="tiposDeCambioBanxico">
+      <wsdl:input name="tiposDeCambioBanxicoRequest" message="impl:tiposDeCambioBanxicoRequest" />
+      <wsdl:output name="tiposDeCambioBanxicoResponse" message="impl:tiposDeCambioBanxicoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="udisBanxico">
+      <wsdl:input name="udisBanxicoRequest" message="impl:udisBanxicoRequest" />
+      <wsdl:output name="udisBanxicoResponse" message="impl:udisBanxicoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DgieWSPortSoapBinding" type="impl:DgieWSPort">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="reservasInternacionalesBanxico">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="reservasInternacionalesBanxicoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="reservasInternacionalesBanxicoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tasasDeInteresBanxico">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="tasasDeInteresBanxicoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="tasasDeInteresBanxicoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tiposDeCambioBanxico">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="tiposDeCambioBanxicoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="tiposDeCambioBanxicoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="udisBanxico">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="udisBanxicoRequest">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="udisBanxicoResponse">
+        <wsdlsoap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DgieWS">
+    <wsdl:port name="DgieWSPort" binding="impl:DgieWSPortSoapBinding">
+      <wsdlsoap:address location="http://www.banxico.org.mx/DgieWSWeb/DgieWS" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></ProjectItem>
+          <ProjectItem
+            Name="ServiceBanxico.cs"
+            Encoding="UTF8"><![CDATA[using ST_baafd8a65b2c42569e2d51ab19595690.ServiceReference1;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
+using System.Linq;
+using System.ServiceModel;
+using System.Text;
+using System.Xml;
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690
+{
+    public class ServiceBanxico
+    {
+        private string uri;
+
+        public ServiceBanxico(string _uri)
+        {
+            uri = _uri;
+        }
+
+        private DgieWSPortClient Binding() 
+        {
+
+            var binding = new BasicHttpBinding();
+            binding.Security.Mode = BasicHttpSecurityMode.Transport;
+            binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
+            binding.Security.Transport.ProxyCredentialType = HttpProxyCredentialType.Basic;
+            binding.Security.Transport.Realm = "";
+            binding.Security.Message.AlgorithmSuite = System.ServiceModel.Security.SecurityAlgorithmSuite.Default;
+            binding.Security.Mode = BasicHttpSecurityMode.None;
+
+            var endpointAddress = new EndpointAddress(uri);
+            DgieWSPortClient soapClient = new DgieWSPortClient(binding, endpointAddress);
+
+            return soapClient;
+        }
+
+        private string GetXml() 
+        {
+            return Binding().tiposDeCambioBanxico();
+        }
+
+        private DataTable CreateTable() {
+
+            DataTable dt_banxico = new DataTable();
+            dt_banxico.Clear();
+            dt_banxico.Columns.Add("Id_Serie", typeof(string));
+            dt_banxico.Columns.Add("Fecha_inserccion", typeof(DateTime));
+            dt_banxico.Columns.Add("Fecha", typeof(DateTime));
+            dt_banxico.Columns.Add("Titulo", typeof(string));
+            dt_banxico.Columns.Add("Valor", typeof(decimal));
+            dt_banxico.Columns.Add("Xml", typeof(string));
+
+
+            return dt_banxico;
+        }
+
+        public DataTable GetTableExchangeRates() 
+        {
+            var dt_banxico = CreateTable();
+
+            foreach (var item in GetListExchangeRates())
+            {
+
+                dt_banxico.Rows.Add(item.Id_Serie.ToString()
+                    , item.Fecha_inserccion.ToString()
+                    , item.Fecha.ToString()
+                    , item.Titulo
+                    , item.Valor
+                    , "TEST");
+
+            }
+
+            return dt_banxico;
+        }
+
+        public List<Banxico> GetListExchangeRates() 
+        {
+            string Id_Serie = "";
+            string Titulo = "";
+            decimal Valor = 0;
+            string xml = GetXml();
+            var valores_xml = new List<Banxico>();
+            XmlDocument documento = new XmlDocument();
+            documento.LoadXml(xml);
+
+            XmlNodeList ser = documento.GetElementsByTagName("bm:DataSet");
+            XmlNodeList lista = ((XmlElement)ser[0]).GetElementsByTagName("bm:Series");
+
+
+            for (int i = 0; i < lista.Count; i++) // * El 5 corresponde al número de nodos que tiene el DataSet, es decir las divisas.
+            {
+                Titulo = ((XmlElement)lista[i]).GetAttribute("TITULO");
+                Id_Serie = ((XmlElement)lista[i]).GetAttribute("IDSERIE");
+                XmlNodeList cot = ((XmlElement)lista[i]).GetElementsByTagName("bm:Obs");
+
+                valores_xml.Add(new Banxico
+                {
+                    Id = i,
+                    Id_Serie = Id_Serie,
+                    Fecha_inserccion = DateTime.Now,
+                    Fecha = DateTime.Parse((cot.Item(0) as XmlElement).GetAttribute("TIME_PERIOD")),
+                    Valor = decimal.TryParse((cot.Item(0) as XmlElement).GetAttribute("OBS_VALUE").ToString(), NumberStyles.Any, new CultureInfo("en-US"), out Valor) ? Valor : 0,
+                    Titulo = Titulo,
+                    xml = xml.ToString()
+                });
+            }
+
+
+
+            return valores_xml;
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="app.config"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="DgieWSPortSoapBinding" />
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://www.banxico.org.mx/DgieWSWeb/DgieWS"
+                binding="basicHttpBinding" bindingConfiguration="DgieWSPortSoapBinding"
+                contract="ServiceReference1.DgieWSPort" name="DgieWSPort" />
+        </client>
+    </system.serviceModel>
+</configuration>]]></ProjectItem>
+          <ProjectItem
+            Name="Banxico.cs"
+            Encoding="UTF8"><![CDATA[using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690
+{
+    public class Banxico
+    {
+        public int Id { get; set; }
+        public string Id_Serie { get; set;}
+        public DateTime Fecha_inserccion { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Titulo { get; set; }
+        public decimal Valor { get; set; }
+        public string xml { get; set; }
+       
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Service References\ServiceReference1\configuration91.svcinfo"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="f9hLzpNFTuNx7/wnBYej30DMkjY=">
+  <bindingConfigurations>
+    <bindingConfiguration bindingType="basicHttpBinding" name="DgieWSPortSoapBinding">
+      <properties>
+        <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>DgieWSPortSoapBinding</serializedValue>
+        </property>
+        <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/openTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/receiveTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/sendTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/allowCookies" isComplexType="false" isExplicitlyDefined="true" clrType="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/bypassProxyOnLocal" isComplexType="false" isExplicitlyDefined="true" clrType="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/hostNameComparisonMode" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.HostNameComparisonMode, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>StrongWildcard</serializedValue>
+        </property>
+        <property path="/maxBufferPoolSize" isComplexType="false" isExplicitlyDefined="true" clrType="System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/maxBufferSize" isComplexType="false" isExplicitlyDefined="false" clrType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>65536</serializedValue>
+        </property>
+        <property path="/maxReceivedMessageSize" isComplexType="false" isExplicitlyDefined="true" clrType="System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/proxyAddress" isComplexType="false" isExplicitlyDefined="false" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/readerQuotas" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</serializedValue>
+        </property>
+        <property path="/readerQuotas/maxDepth" isComplexType="false" isExplicitlyDefined="false" clrType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>0</serializedValue>
+        </property>
+        <property path="/readerQuotas/maxStringContentLength" isComplexType="false" isExplicitlyDefined="false" clrType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>0</serializedValue>
+        </property>
+        <property path="/readerQuotas/maxArrayLength" isComplexType="false" isExplicitlyDefined="false" clrType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>0</serializedValue>
+        </property>
+        <property path="/readerQuotas/maxBytesPerRead" isComplexType="false" isExplicitlyDefined="false" clrType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>0</serializedValue>
+        </property>
+        <property path="/readerQuotas/maxNameTableCharCount" isComplexType="false" isExplicitlyDefined="false" clrType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>0</serializedValue>
+        </property>
+        <property path="/textEncoding" isComplexType="false" isExplicitlyDefined="false" clrType="System.Text.Encoding, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.Text.UTF8Encoding</serializedValue>
+        </property>
+        <property path="/transferMode" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.TransferMode, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>Buffered</serializedValue>
+        </property>
+        <property path="/useDefaultWebProxy" isComplexType="false" isExplicitlyDefined="true" clrType="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/messageEncoding" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.WSMessageEncoding, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>Text</serializedValue>
+        </property>
+        <property path="/security" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.BasicHttpSecurityElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.BasicHttpSecurityElement</serializedValue>
+        </property>
+        <property path="/security/mode" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.BasicHttpSecurityMode, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>None</serializedValue>
+        </property>
+        <property path="/security/transport" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.HttpTransportSecurityElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.HttpTransportSecurityElement</serializedValue>
+        </property>
+        <property path="/security/transport/clientCredentialType" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.HttpClientCredentialType, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>None</serializedValue>
+        </property>
+        <property path="/security/transport/proxyCredentialType" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.HttpProxyCredentialType, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>None</serializedValue>
+        </property>
+        <property path="/security/transport/extendedProtectionPolicy" isComplexType="true" isExplicitlyDefined="false" clrType="System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.Security.Authentication.ExtendedProtection.Configuration.ExtendedProtectionPolicyElement</serializedValue>
+        </property>
+        <property path="/security/transport/extendedProtectionPolicy/policyEnforcement" isComplexType="false" isExplicitlyDefined="false" clrType="System.Security.Authentication.ExtendedProtection.PolicyEnforcement, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>Never</serializedValue>
+        </property>
+        <property path="/security/transport/extendedProtectionPolicy/protectionScenario" isComplexType="false" isExplicitlyDefined="false" clrType="System.Security.Authentication.ExtendedProtection.ProtectionScenario, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>TransportSelected</serializedValue>
+        </property>
+        <property path="/security/transport/extendedProtectionPolicy/customServiceNames" isComplexType="true" isExplicitlyDefined="false" clrType="System.Security.Authentication.ExtendedProtection.Configuration.ServiceNameElementCollection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>(Collection)</serializedValue>
+        </property>
+        <property path="/security/transport/realm" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/security/message" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.BasicHttpMessageSecurityElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.BasicHttpMessageSecurityElement</serializedValue>
+        </property>
+        <property path="/security/message/clientCredentialType" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.BasicHttpMessageCredentialType, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>UserName</serializedValue>
+        </property>
+        <property path="/security/message/algorithmSuite" isComplexType="false" isExplicitlyDefined="false" clrType="System.ServiceModel.Security.SecurityAlgorithmSuite, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>Default</serializedValue>
+        </property>
+      </properties>
+    </bindingConfiguration>
+  </bindingConfigurations>
+  <endpoints>
+    <endpoint name="DgieWSPort" contract="ServiceReference1.DgieWSPort" bindingType="basicHttpBinding" address="http://www.banxico.org.mx/DgieWSWeb/DgieWS" bindingConfiguration="DgieWSPortSoapBinding">
+      <properties>
+        <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>http://www.banxico.org.mx/DgieWSWeb/DgieWS</serializedValue>
+        </property>
+        <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/binding" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>basicHttpBinding</serializedValue>
+        </property>
+        <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>DgieWSPortSoapBinding</serializedValue>
+        </property>
+        <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>ServiceReference1.DgieWSPort</serializedValue>
+        </property>
+        <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
+        </property>
+        <property path="/headers/headers" isComplexType="false" isExplicitlyDefined="true" clrType="System.ServiceModel.Channels.AddressHeaderCollection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>&lt;Header /&gt;</serializedValue>
+        </property>
+        <property path="/identity" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.IdentityElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.IdentityElement</serializedValue>
+        </property>
+        <property path="/identity/userPrincipalName" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.UserPrincipalNameElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.UserPrincipalNameElement</serializedValue>
+        </property>
+        <property path="/identity/userPrincipalName/value" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/identity/servicePrincipalName" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.ServicePrincipalNameElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.ServicePrincipalNameElement</serializedValue>
+        </property>
+        <property path="/identity/servicePrincipalName/value" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/identity/dns" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.DnsElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.DnsElement</serializedValue>
+        </property>
+        <property path="/identity/dns/value" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/identity/rsa" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.RsaElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.RsaElement</serializedValue>
+        </property>
+        <property path="/identity/rsa/value" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/identity/certificate" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.CertificateElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.CertificateElement</serializedValue>
+        </property>
+        <property path="/identity/certificate/encodedValue" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/identity/certificateReference" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.CertificateReferenceElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>System.ServiceModel.Configuration.CertificateReferenceElement</serializedValue>
+        </property>
+        <property path="/identity/certificateReference/storeName" isComplexType="false" isExplicitlyDefined="false" clrType="System.Security.Cryptography.X509Certificates.StoreName, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>My</serializedValue>
+        </property>
+        <property path="/identity/certificateReference/storeLocation" isComplexType="false" isExplicitlyDefined="false" clrType="System.Security.Cryptography.X509Certificates.StoreLocation, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>LocalMachine</serializedValue>
+        </property>
+        <property path="/identity/certificateReference/x509FindType" isComplexType="false" isExplicitlyDefined="false" clrType="System.Security.Cryptography.X509Certificates.X509FindType, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>FindBySubjectDistinguishedName</serializedValue>
+        </property>
+        <property path="/identity/certificateReference/findValue" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/identity/certificateReference/isChainIncluded" isComplexType="false" isExplicitlyDefined="false" clrType="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>False</serializedValue>
+        </property>
+        <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>DgieWSPort</serializedValue>
+        </property>
+        <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+        <property path="/endpointConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue />
+        </property>
+      </properties>
+    </endpoint>
+  </endpoints>
+</SavedWcfConfigurationInformation>]]></ProjectItem>
+          <ProjectItem
+            Name="ContextDB\ConexionBD.cs"
+            Encoding="UTF8"><![CDATA[using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+
+namespace ST_baafd8a65b2c42569e2d51ab19595690
+{
+    public class ConexionBD
+    {
+        private SqlConnection connection;
+
+        public ConexionBD()
+        {
+            connection = new SqlConnection(@"data source=DESKTOP-DE336EN\MSSQLSERVER2016;initial catalog=BDD_RSS;user id=Sa;Password=Chaparrita;");
+        }
+
+        public SqlConnection Connection { get { return connection; } }
+    }
+
+
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_baafd8a65b2c42569e2d51ab19595690.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAEdnnlkAAAAAAAAAAOAAAiELAQsAADYAAAAIAAAAAAAAHlQA
+AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACgAAAAAgAAAAAAAAMAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAANBTAABLAAAAAGAAAAgEAAAAAAAAAAAAAAAAAAAA
+AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAJDQAAAAgAAAANgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAYAAAAAYAAAA4AAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAIAAAAACAAAAPgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAA
+VAAAAAAAAEgAAAACAAUAACsAANAoAAABAAAAAAAAAEgqAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CewEAAAQqIgIDfQEAAAQqHgJ7AgAABCoiAgN9AgAABCoe
+AnsDAAAEKiICA30DAAAEKh4CewQAAAQqIgIDfQQAAAQqHgJ7BQAABCoiAgN9BQAABCoeAnsGAAAE
+KiICA30GAAAEKh4CewcAAAQqIgIDfQcAAAQqHgIoDwAACipeAigPAAAKAnIBAABwcxAAAAp9CAAA
+BCoeAnsIAAAEKkoCKA8AAAoCcxAAAAZ9CQAABCoAABswAgA8AAAAAQAAEQQsNwRvEQAACgsrFRIB
+KBIAAAoKA28TAAAKBm8UAAAKJhIBKBUAAAot4t4OEgH+FgQAABtvFgAACtwDKgEQAAACAAoAIiwA
+DgAAAAATMAMAWAAAAAIAABECewkAAARvEQAABm8XAAAKcxgAAAoKAwJ7CQAABG8RAAAGcxkAAAoL
+AgcEKBMAAAYLcxoAAAoMCAdvGwAACggGbxwAAAomAnsJAAAEbxEAAAZvHQAACgYqEzADAEQAAAAD
+AAARAnsJAAAEbxEAAAZvFwAACgMCewkAAARvEQAABnMZAAAKCgIGBCgTAAAGCgZvHgAACgsCewkA
+AARvEQAABm8dAAAKByoiAhdvFwAABiqWAyYCewoAAAQtEwMsEAJ7CQAABG8RAAAGbx0AAAoCF30K
+AAAEKh4CKCQAAAoqIgIDKCUAAAoqJgIDBCgmAAAKKiYCAwQoJwAACiomAgMEKCgAAAoqMgIoKQAA
+Cm8YAAAGKjICKCkAAApvGQAABioyAigpAAAKbxoAAAYqMgIoKQAACm8bAAAGKjoCKA8AAAoCA30L
+AAAEKgAAABMwAgCAAAAABAAAEXMqAAAKCgZvKwAAChdvLAAACgZvKwAACm8tAAAKF28uAAAKBm8r
+AAAKby0AAAoXby8AAAoGbysAAApvLQAACnLKAABwbzAAAAoGbysAAApvMQAACigyAAAKbzMAAAoG
+bysAAAoWbywAAAoCewsAAARzNAAACgsGB3MgAAAGDAgqMgIoJgAABm8jAAAGKgAAABMwAwCwAAAA
+BQAAEXMYAAAKCgZvNQAACgZvNgAACnLMAABw0DkAAAEoNwAACm84AAAKJgZvNgAACnLeAABw0AwA
+AAEoNwAACm84AAAKJgZvNgAACnIAAQBw0AwAAAEoNwAACm84AAAKJgZvNgAACnIMAQBw0DkAAAEo
+NwAACm84AAAKJgZvNgAACnIaAQBw0A0AAAEoNwAACm84AAAKJgZvNgAACnImAQBw0DkAAAEoNwAA
+Cm84AAAKJgYqGzAEAKwAAAAGAAARAigoAAAGCgIoKgAABm85AAAKDCt5EgIoOgAACgsGbzsAAAoc
+jQEAAAENCRYHbwMAAAZvPAAACqIJFwdvBQAABhMEEgT+FgwAAAFvPAAACqIJGAdvBwAABhMFEgX+
+FgwAAAFvPAAACqIJGQdvCQAABqIJGgdvCwAABowNAAABogkbci4BAHCiCW89AAAKJhICKD4AAAo6
+e////94OEgL+FgYAABtvFgAACtwGKgEQAAACABMAiZwADgAAAAATMAYAawEAAAcAABFyygAAcApy
+ygAAcAsWcz8AAAoMAignAAAGDXNAAAAKEwRzQQAAChMFEQUJb0IAAAoRBXI4AQBwb0MAAAoTBhEG
+Fm9EAAAKdEIAAAFyTgEAcG9FAAAKEwcWEwg4+wAAABEHEQhvRAAACnRCAAABcmIBAHBvRgAACgsR
+BxEIb0QAAAp0QgAAAXJwAQBwb0YAAAoKEQcRCG9EAAAKdEIAAAFygAEAcG9FAAAKEwkRBHMPAAAG
+EwoRChEIbwIAAAYRCgZvBAAABhEKKEcAAApvBgAABhEKEQkWb0gAAAp1QgAAAXKOAQBwb0YAAAoo
+SQAACm8IAAAGEQoRCRZvSAAACnVCAAABcqYBAHBvRgAACm88AAAKIP8BAAByugEAcHNKAAAKEgIo
+SwAACi0IFnM/AAAKKwEIbwwAAAYRCgdvCgAABhEKCW88AAAKbw4AAAYRCm9MAAAKEQgXWBMIEQgR
+B29NAAAKP/f+//8RBCoeAigPAAAKKgATMAIALQAAAAgAABF+DAAABC0gcsYBAHDQCQAAAig3AAAK
+b08AAApzUAAACgoGgAwAAAR+DAAABCoafg0AAAQqHgKADQAABCoafg4AAAQqLnMwAAAGgA4AAAQq
+HgIoUgAACioAEzADAHEAAAAJAAARAnMSAAAGfREAAAQWCnNAAAAKCwIoVAAACm9VAAAKcjgCAHBv
+VgAACm9XAAAKbzwAAApzJQAABgwCexEAAARyQAIAcBRvFAAABg0IbyoAAAYLAgkHKDMAAAYKBi3t
+AgcoNQAABgIoVAAAChZvWAAACipaAnLMAABwb1kAAApyfgIAcG9aAAAKKkYCbwMAAAZyfgIAcG9b
+AAAKKgAAEzADAIIAAAAKAAARA287AAAKb1wAAAotAhYqAyhdAAAKfhIAAAQtERT+BjcAAAZzXgAA
+CoASAAAEfhIAAAQoAQAAK29gAAAKG5pvPAAACgoEfhMAAAQtERT+BjgAAAZzYQAACoATAAAEfhMA
+AAQoAgAAK28LAAAGDBICKGIAAAoLBgdvWwAACi0CFioXKgAAEzADAK8AAAAFAAARcxgAAAoKBm81
+AAAKBm82AAAKcswAAHDQOQAAASg3AAAKbzgAAAomBm82AAAKct4AAHDQDAAAASg3AAAKbzgAAAom
+Bm82AAAKcgABAHDQDAAAASg3AAAKbzgAAAomBm82AAAKcgwBAHDQOQAAASg3AAAKbzgAAAomBm82
+AAAKchoBAHDQDQAAASg3AAAKbzgAAAomBm82AAAKciYBAHDQOQAAASg3AAAKbzgAAAomKgAbMAMA
+aQEAAAsAABFzYwAACgoGco4CAHBvZAAACiYGcqgCAHBvZAAACiYGcj8DAHBvZAAACiYDbzkAAAoT
+CTgVAQAAEgkoOgAACgtzZQAACgwIctIDAHAfFnNmAAAKDQkHbwMAAAZvPAAACm9nAAAKCW9oAAAK
+CHLoAwBwGnNmAAAKEwQRBAdvBQAABhMKEgr+FgwAAAFvPAAACm9nAAAKEQRvaAAACghyDgQAcBpz
+ZgAAChMFEQUHbwcAAAYTCxIL/hYMAAABbzwAAApvZwAAChEFb2gAAAoIch4EAHAfFnNmAAAKEwYR
+BgdvCQAABm9nAAAKEQZvaAAACghyMAQAcBtzZgAAChMHEQcHbwsAAAaMDQAAAW9nAAAKEQdvaAAA
+CghyQAQAcB8Wc2YAAAoTCBEIB28NAAAGb2cAAAoRCG9oAAAKAnsRAAAEBm88AAAKCG8VAAAGJhIJ
+KD4AAAo63/7//94OEgn+FgYAABtvFgAACtwqAAAAQRwAAAIAAAAyAAAAKAEAAFoBAAAOAAAAAAAA
+AB4CKGkAAAoqtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVy
+LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRv
+a2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQC
+AAAAAAAAAAAAAABQQURQQURQtAAAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAA
+AEQNAAAjfgAAsA0AAHQQAAAjU3RyaW5ncwAAAAAkHgAATAQAACNVUwBwIgAAEAAAACNHVUlEAAAA
+gCIAAFAGAAAjQmxvYgAAAAAAAAACAAABVx+iCQkLAAAA+iUzABYAAAEAAABVAAAADAAAABYAAAA4
+AAAAIAAAAAkAAABpAAAABAAAADkAAAALAAAABAAAAAsAAAATAAAACAAAAAEAAAAJAAAAAQAAAAEA
+AAACAAAAAAAKAAEAAAAAAAYAgAF5AQYAhwF5AQoApwGTAQoAtgGTAQoA4wHGAQoA7AGTAQoAAQKT
+AQoAFQKTAQ4ANwIiAhIAlwJuAgYAswJ5AQYA4AJ5AQYAPQN5ARYAcARaBBYAsQRaBAYA1wS8BBYA
+3gRaBBYA+AROBAoAgAWTAQoAkAXGAQYA6wXaBQYAHAYHBgoAMgeTAQYAvAeiBwYA5wfVBwYA/gfV
+BwYAGwjVBwYAOgjVBwYAUwjVBwYAbAjVBwYAhwjVBwYAogjVBwYAuwjVBwYA9AjUCAYAFAnUCAYA
+MgnUCEMATQkAABYAcglaBBYAuAmlCRYAyglaBBYA6wmlCRYABAqlCQ4ANgoeCgoATQqTAQoAZgqT
+AQoAgQqTAQYAsQqeCgoA2gqTAQoA6wqTAQoACguTAQoAKQuTAQoATQuTAQoAfwuTAQoAuQuTAQoA
++wveCxYAKwxOBAYATAx5AQYAUwx5AQYAWAx5ARYAfAxOBBYAhwxOBBYAqwxOBBoAvgyzDBoA0gyz
+DBoA8wyzDBoABg2zDAYAMQ0HBgYAPg15AQYAYQ2eCgYAfg3VBw4Aqg2UDQ4Aww2UDRIA3w1uAhIA
+AQ5uAh4AWg46Dh4Acg46DgYAtw55ARYALQ9OBCIAZg9OBCIAeg9OBCYAuQ+tDwYAxA+8BAYA+w/v
+DxYAEBBOBBYAGhClCQAAAAABAAAAAAABAAEAAQAQADIAOgAFAAEAAQABABAAXgA6AAUACAAQAAEA
+EABpAHQABQAJABIAoQAAAKIArQAAAAsAGAChAAAA4wCtAAAACwAcAAEAEAD1AK0ACgALABwAAQAQ
+AAYBOgAFAAsAJQAAABAAFQEfAQUADAArAAABEABOAR8BJQAOAC8AAQAQAFcBOgApAA8AMgADAQAA
+YgEAAC0AFAA5AAEAbwNNAAEAgwNQAAEAnQNTAAEAvwNTAAEA1gNQAAEA7gNXAAEABQRQAAEAfgRt
+AAEAowR7AAEAqAR/AAEAmAVQABEA+wXTABEAKAbXABEAbAb1AFGAkAZQAFGAoQZQAAEAqQZPAREA
+vg7lBBEA/w72BAYG8AZNAFaA+AZpAVaAAAdpAVAgAAAAAIYIuAIhAAEAWCAAAAAAhgi/AiUAAQBh
+IAAAAACGCMYCKgACAGkgAAAAAIYI0wIuAAIAciAAAAAAhgjpAjMAAwB6IAAAAACGCP4COAADAIMg
+AAAAAIYIEwMzAAQAiyAAAAAAhggdAzgABACUIAAAAACGCCcDKgAFAJwgAAAAAIYIMgMuAAUApSAA
+AAAAhghFAz4ABgCtIAAAAACGCE8DQwAGALYgAAAAAIYIWQMqAAcAviAAAAAAhghhAy4ABwDHIAAA
+AACGGGkDSQAIAM8gAAAAAIYYaQNJAAgA5yAAAAAAhgiJBHEACADvIAAAAACGGGkDSQAIAAQhAAAA
+AIEA6wSCAAgAXCEAAAAAhgACBY8ACgDAIQAAAACGABEFmwAMABAiAAAAAOYBIgVJAA4AGSIAAAAA
+xAEiBaYADgAAAAAAAADGBSoFKgAPAAAAAAAAAMYFSQUqABAAAAAAAAAAxgVfBSoAEQAAAAAAAADG
+BXQFKgASAD8iAAAAAIYYaQNJABMARyIAAAAAhhhpAy4AEwBQIgAAAACGGGkDqwAUAFoiAAAAAIYY
+aQOxABYAZCIAAAAAhhhpA7gAGABuIgAAAADmASoFKgAaAHsiAAAAAOYBSQUqABoAiCIAAAAA5gFf
+BSoAGgCVIgAAAADmAXQFKgAaAKIiAAAAAIYYaQMuABoAtCIAAAAAgQCQBcAAGwBAIwAAAACBAJwF
+KgAbAFAjAAAAAIEAowXFABsADCQAAAAAhgCvBcUAGwDUJAAAAACGAMUFygAbAEsmAAAAAIMYaQNJ
+ABsAVCYAAAAAkwg4BtsAGwCNJgAAAACTCEwG4AAbAJQmAAAAAJMIWAblABsAnCYAAAAAlgh8BvkA
+HACvJgAAAACGGGkDSQAcAKMmAAAAAJEY2A21BBwAuCYAAAAAhgCsBkkAHABgJwAAAACBALEGUwEc
+APAnAAAAAIEAwwZJAB4ArCgAAAAAgQDZBl8BHgBAKgAAAACGGGkDSQAfADUnAAAAAJEAnQ7eBB8A
+TCcAAAAAkQDlDvAEIAAAAAEACAcAAAEACAcAAAEACAcAAAEACAcAAAEACAcAAAEACAcAAAEACAcA
+AAEADgcAAAIAFgcAAAEAIQcAAAIAFgcAAAEAIQcAAAIAFgcAAAEAKAcAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAEATAcAAAEATAcAAAIAZgcAAAEATAcAAAIAZgcAAAEAdAcAAAIAZgcAAAEAfAcA
+AAEACAcAAAEAgQcAAAIAiwcAAAEAkQcAAAEAtQ4AAAEA/Q4EAAkABgAUAAYADQAGABEABgAVAAYA
+GQAGAAYABgAJAAcAFAC5AGkDSQDBAGkDLgDJAGkDLgDRAGkDLgDZAGkDLgDhAGkDLgDpAGkDLgDx
+AGkDLgD5AGkDLgABAWkDLgAJAWkDLgARAWkDJQAZAWkDSQAhAWkDSQAJAGkDSQBxAGkDLgAcAFgJ
+kQEkAGYJowF5AIkJqAExAZgJrgEkAJwJtQERACIFSQA5AcUJSQCRAGkDSQB5AGkDxQFBAWkDSQBB
+AdkJzAFJAfkJ0gE5Af4JSQBRAQ4KIQBZAWkDqwBhAWkDSQBpAWkDSQBxAWkDSQB5AWkDSQAUAGkD
+SQAUAGkDLgAUAGkDqwAUAGkDsQAUAGkDuAAUAM4KowGBAWkDSQCBAf0KtgOJASALvAOJAT8LwwOZ
+AWYLyQOZAZcL0AOZAa8LLgCJAdIL1wO5AXwG3QOxARIM4wOZAGkDLgCRACUMSQCRAEAM9APRAWoM
++gPBAZgJAwQsAFgJkQE0AGYJowGRAJkMIQQJAKIMKgDpAZgJJwQ0AJwJtQFpAGkDJQAsAGkDSQD5
+AWkDSQD5AcoMLgD5Ad4MQwQBAvsMSgQRAt4MQwQRAhENUQRhAB4NVgQBAiYNSgRhACsNWwSxAGkD
+LgBpAE4NYQQsAJgJbwQBAlcNIQApAmkDSQDRAYcNkgSpAGkDmAQ5AmkDpQRJAGkDSQBJAmkDSQBR
+ABMOuQRRAmQOvwRZAnsOxQRhAoQOzARRAo4OJQDxAXsOAAUJACYPBQXJASYPCgVxAlcNIQB5ApQP
+DwU8AGkDJgWJAtIPLAXxAeEPRwVEAGkDJgVpAKIMKgCZAmkDSQCZAgkQYQUcAGkDSQCJAGkDaAWp
+AiYQcAUcAJgJbwRRAGkDSQAOADwAAwEOAEAAQAEIAFQAbQEIAFgAcgEgAHMAcgEhAHMAcgEuAEMA
+EQYuAGMAKAYuAGsAMQYuADMACwYuAEsACwYuADsA4gUuABMAmgUuABsA4gUuACMACwYuACsACwZA
+AHMAcgFBAHMAcgFgAHMAcgFhAHMAcgGAAHMAcgGBAHMAcgGgAHMAcgGhAHMAcgGjAPsA6AGjAAMB
+CQLAAHMAcgHBAHMAcgHDAPsA6AHgAHMAcgHhAHMAcgHjAPsA6AHjABsBcgEAAXMAcgEgAXMAcgEj
+AXMCcgEpAYsCrARAAXMAcgFJAYsCrARgAXMAcgFjAZsCcgGAAXMAcgGgAXMAcgHAAXMAcgHBAXMA
+cgHkAQsAdwEEAgsAdwEkAgsAdwFBAnMAcgFEAgsAdwFhAnMAcgEAAxMBiAIAAwsBaQIgAwsBaQIg
+AxMBiAJAAwsBaQJAAxMBiAJgAwsBaQJgAxMBiALgBnMAcgEAB3MAcgG5AdgB4gHqAw0ELwR1BKAE
+0ARaBXUFAgABAAMACAAJAAkACgALAAAAGgRbAAAAHQRfAAAAJgRjAAAANwRjAAAAPQRfAAAARARo
+AAAASgRfAAAAmAR2AAAA6wXrAAAAZAbwAAAAiAb+AAIAAQADAAEAAgADAAEABAAFAAIAAwAFAAEA
+BgAHAAIABQAHAAIABwAJAAEACAAJAAEACgALAAIACQALAAIACwANAAEADAANAAEADgAPAAIADQAP
+AAIAEQARAAIALAATAAIALQAVAAEALgAVAAIALwAXAAoAEQCKAZsBEgQZBBwFTAUEgAAAAQAAACwZ
+s6YAAAAAAAA6AAAABAAAAAAAAAAAAAAAAQBwAQAAAAAEAAAAAAAAAAAAAAABAJMBAAAAAAQAAAAA
+AAAAAAAAAAEAeQEAAAAADAAAAAAAAAAAAAAAGABPAgAAAAAEAAAAAAAAAAAAAAABAE4EAAAAAAQA
+AAAAAAAAAAAAAAEAswwAAAAADAAAAAAAAAAAAAAAGAAbDgAAAAAEAAAAAAAAAAAAAAABAEgPAAAA
+AAQAAAAAAAAAAAAAAAEAoQ8AAAAAAAAAAAEAAAAwEAAADAALAL8AQQW/AFUFAAAAAAA8TW9kdWxl
+PgBTVF9iYWFmZDhhNjViMmM0MjU2OWUyZDUxYWIxOTU5NTY5MC5kbGwAQmFueGljbwBTVF9iYWFm
+ZDhhNjViMmM0MjU2OWUyZDUxYWIxOTU5NTY5MABDb25leGlvbkJEAFJlcG9zaXRvcnkAU1RfYmFh
+ZmQ4YTY1YjJjNDI1NjllMmQ1MWFiMTk1OTU2OTAuQ29udGV4dERCAERnaWVXU1BvcnQAU1RfYmFh
+ZmQ4YTY1YjJjNDI1NjllMmQ1MWFiMTk1OTU2OTAuU2VydmljZVJlZmVyZW5jZTEARGdpZVdTUG9y
+dENoYW5uZWwARGdpZVdTUG9ydENsaWVudABTZXJ2aWNlQmFueGljbwBSZXNvdXJjZXMAU1RfYmFh
+ZmQ4YTY1YjJjNDI1NjllMmQ1MWFiMTk1OTU2OTAuUHJvcGVydGllcwBTZXR0aW5ncwBTY3JpcHRN
+YWluAFNjcmlwdFJlc3VsdHMAbXNjb3JsaWIAU3lzdGVtAE9iamVjdABJRGlzcG9zYWJsZQBTeXN0
+ZW0uU2VydmljZU1vZGVsAElDbGllbnRDaGFubmVsAElDb250ZXh0Q2hhbm5lbABTeXN0ZW0uU2Vy
+dmljZU1vZGVsLkNoYW5uZWxzAElDaGFubmVsAElDb21tdW5pY2F0aW9uT2JqZWN0AElFeHRlbnNp
+YmxlT2JqZWN0YDEAQ2xpZW50QmFzZWAxAFN5c3RlbS5Db25maWd1cmF0aW9uAEFwcGxpY2F0aW9u
+U2V0dGluZ3NCYXNlAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFzawBNaWNyb3NvZnQuU3Fs
+U2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAFZTVEFSVFNjcmlwdE9iamVjdE1vZGVsQmFzZQBF
+bnVtAGdldF9JZABzZXRfSWQAZ2V0X0lkX1NlcmllAHNldF9JZF9TZXJpZQBEYXRlVGltZQBnZXRf
+RmVjaGFfaW5zZXJjY2lvbgBzZXRfRmVjaGFfaW5zZXJjY2lvbgBnZXRfRmVjaGEAc2V0X0ZlY2hh
+AGdldF9UaXR1bG8Ac2V0X1RpdHVsbwBEZWNpbWFsAGdldF9WYWxvcgBzZXRfVmFsb3IAZ2V0X3ht
+bABzZXRfeG1sAC5jdG9yADxJZD5rX19CYWNraW5nRmllbGQAPElkX1NlcmllPmtfX0JhY2tpbmdG
+aWVsZAA8RmVjaGFfaW5zZXJjY2lvbj5rX19CYWNraW5nRmllbGQAPEZlY2hhPmtfX0JhY2tpbmdG
+aWVsZAA8VGl0dWxvPmtfX0JhY2tpbmdGaWVsZAA8VmFsb3I+a19fQmFja2luZ0ZpZWxkADx4bWw+
+a19fQmFja2luZ0ZpZWxkAElkAElkX1NlcmllAEZlY2hhX2luc2VyY2Npb24ARmVjaGEAVGl0dWxv
+AFZhbG9yAHhtbABTeXN0ZW0uRGF0YQBTeXN0ZW0uRGF0YS5TcWxDbGllbnQAU3FsQ29ubmVjdGlv
+bgBjb25uZWN0aW9uAGdldF9Db25uZWN0aW9uAENvbm5lY3Rpb24AY29ubgBkaXNwb3NlZABTcWxD
+b21tYW5kAFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljAExpc3RgMQBTcWxQYXJhbWV0ZXIAR2V0
+UGFyYW1ldGVyAERhdGFUYWJsZQBFeGVjdXRlUXVlcnlTUABFeGVjdXRlUXVlcnlUZXh0AERpc3Bv
+c2UAcmVzZXJ2YXNJbnRlcm5hY2lvbmFsZXNCYW54aWNvAHRhc2FzRGVJbnRlcmVzQmFueGljbwB0
+aXBvc0RlQ2FtYmlvQmFueGljbwB1ZGlzQmFueGljbwBFbmRwb2ludEFkZHJlc3MAQmluZGluZwB1
+cmkAR2V0WG1sAENyZWF0ZVRhYmxlAEdldFRhYmxlRXhjaGFuZ2VSYXRlcwBHZXRMaXN0RXhjaGFu
+Z2VSYXRlcwBTeXN0ZW0uUmVzb3VyY2VzAFJlc291cmNlTWFuYWdlcgByZXNvdXJjZU1hbgBTeXN0
+ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwByZXNvdXJjZUN1bHR1cmUAZ2V0X1Jlc291cmNl
+TWFuYWdlcgBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQBDdWx0dXJlAGRlZmF1bHRJbnN0YW5jZQBn
+ZXRfRGVmYXVsdABEZWZhdWx0AHNwQmFueGljb0N1cnJlbnQAaWRTZXJpZQBycABNYWluAENvbXBh
+cmVWYWx1ZVNlcmllAERhdGFUYWJsZUV4Y2hhbmdlUmF0ZQBJbnNlcnROZXdFeGNoYW5nZVJhdGVz
+AHZhbHVlX18AU3VjY2VzcwBGYWlsdXJlAHZhbHVlAGNvbW1hbmQAcGFyYW1ldGVycwBuYW1lU1AA
+ZGlzcG9zaW5nAE1lc3NhZ2VQYXJhbWV0ZXJBdHRyaWJ1dGUAZW5kcG9pbnRDb25maWd1cmF0aW9u
+TmFtZQByZW1vdGVBZGRyZXNzAGJpbmRpbmcAX3VyaQBkdEN1cnJlbnQAbHN0U3cAbHN0RXhjaGFu
+Z2VSYXRlcwBTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0
+ZQBTeXN0ZW0uUmVmbGVjdGlvbgBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5RGVzY3Jp
+cHRpb25BdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5Q29t
+cGFueUF0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRB
+dHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAQXNzZW1ibHlDdWx0dXJlQXR0cmli
+dXRlAEFzc2VtYmx5VmVyc2lvbkF0dHJpYnV0ZQBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZp
+Y2VzAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlB
+dHRyaWJ1dGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARW51bWVyYXRvcgBHZXRFbnVtZXJh
+dG9yAGdldF9DdXJyZW50AFNxbFBhcmFtZXRlckNvbGxlY3Rpb24AZ2V0X1BhcmFtZXRlcnMAQWRk
+AE1vdmVOZXh0AFN5c3RlbS5EYXRhLkNvbW1vbgBEYkNvbm5lY3Rpb24AT3BlbgBTcWxEYXRhQWRh
+cHRlcgBzZXRfU2VsZWN0Q29tbWFuZABEYkRhdGFBZGFwdGVyAEZpbGwAQ2xvc2UARGJDb21tYW5k
+AEV4ZWN1dGVOb25RdWVyeQBTeXN0ZW0uQ29kZURvbS5Db21waWxlcgBHZW5lcmF0ZWRDb2RlQXR0
+cmlidXRlAFNlcnZpY2VDb250cmFjdEF0dHJpYnV0ZQBPcGVyYXRpb25Db250cmFjdEF0dHJpYnV0
+ZQBYbWxTZXJpYWxpemVyRm9ybWF0QXR0cmlidXRlAFN5c3RlbS5EaWFnbm9zdGljcwBEZWJ1Z2dl
+clN0ZXBUaHJvdWdoQXR0cmlidXRlAGdldF9DaGFubmVsAEJhc2ljSHR0cEJpbmRpbmcAQmFzaWNI
+dHRwU2VjdXJpdHkAZ2V0X1NlY3VyaXR5AEJhc2ljSHR0cFNlY3VyaXR5TW9kZQBzZXRfTW9kZQBI
+dHRwVHJhbnNwb3J0U2VjdXJpdHkAZ2V0X1RyYW5zcG9ydABIdHRwQ2xpZW50Q3JlZGVudGlhbFR5
+cGUAc2V0X0NsaWVudENyZWRlbnRpYWxUeXBlAEh0dHBQcm94eUNyZWRlbnRpYWxUeXBlAHNldF9Q
+cm94eUNyZWRlbnRpYWxUeXBlAHNldF9SZWFsbQBCYXNpY0h0dHBNZXNzYWdlU2VjdXJpdHkAZ2V0
+X01lc3NhZ2UAU3lzdGVtLlNlcnZpY2VNb2RlbC5TZWN1cml0eQBTZWN1cml0eUFsZ29yaXRobVN1
+aXRlAHNldF9BbGdvcml0aG1TdWl0ZQBDbGVhcgBEYXRhQ29sdW1uQ29sbGVjdGlvbgBnZXRfQ29s
+dW1ucwBTdHJpbmcAVHlwZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBEYXRh
+Q29sdW1uAERhdGFSb3dDb2xsZWN0aW9uAGdldF9Sb3dzAFRvU3RyaW5nAERhdGFSb3cAU3lzdGVt
+LlhtbABYbWxEb2N1bWVudABMb2FkWG1sAFhtbE5vZGVMaXN0AEdldEVsZW1lbnRzQnlUYWdOYW1l
+AFhtbE5vZGUAZ2V0X0l0ZW1PZgBYbWxFbGVtZW50AEdldEF0dHJpYnV0ZQBnZXRfTm93AEl0ZW0A
+UGFyc2UATnVtYmVyU3R5bGVzAElGb3JtYXRQcm92aWRlcgBUcnlQYXJzZQBnZXRfQ291bnQARGVi
+dWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBBc3NlbWJseQBnZXRfQXNzZW1ibHkAU3lzdGVtLkNv
+bXBvbmVudE1vZGVsAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVTdGF0
+ZQAuY2N0b3IAU1NJU1NjcmlwdFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAFNjcmlwdE9iamVjdE1v
+ZGVsAGdldF9EdHMATWljcm9zb2Z0LlNxbFNlcnZlci5NYW5hZ2VkRFRTAE1pY3Jvc29mdC5TcWxT
+ZXJ2ZXIuRHRzLlJ1bnRpbWUAVmFyaWFibGVzAGdldF9WYXJpYWJsZXMAVmFyaWFibGUAZ2V0X0l0
+ZW0AZ2V0X1ZhbHVlAHNldF9UYXNrUmVzdWx0ADxDb21wYXJlVmFsdWVTZXJpZT5iX18wAHgARnVu
+Y2AyAENTJDw+OV9fQ2FjaGVkQW5vbnltb3VzTWV0aG9kRGVsZWdhdGUyADxDb21wYXJlVmFsdWVT
+ZXJpZT5iX18xAHMAQ1MkPD45X19DYWNoZWRBbm9ueW1vdXNNZXRob2REZWxlZ2F0ZTMARXF1YWxz
+AEludGVybmFsRGF0YUNvbGxlY3Rpb25CYXNlAFN5c3RlbS5EYXRhLkRhdGFTZXRFeHRlbnNpb25z
+AERhdGFUYWJsZUV4dGVuc2lvbnMARW51bWVyYWJsZVJvd0NvbGxlY3Rpb25gMQBBc0VudW1lcmFi
+bGUAU3lzdGVtLkNvcmUAU3lzdGVtLkxpbnEARW51bWVyYWJsZQBJRW51bWVyYWJsZWAxAEZpcnN0
+T3JEZWZhdWx0AGdldF9JdGVtQXJyYXkAU3lzdGVtLlRleHQAU3RyaW5nQnVpbGRlcgBBcHBlbmQA
+U3FsRGJUeXBlAERiUGFyYW1ldGVyAHNldF9WYWx1ZQBTVF9iYWFmZDhhNjViMmM0MjU2OWUyZDUx
+YWIxOTU5NTY5MC5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMAAACAx2QAYQB0AGEAIABz
+AG8AdQByAGMAZQA9AEQARQBTAEsAVABPAFAALQBEAEUAMwAzADYARQBOAFwATQBTAFMAUQBMAFMA
+RQBSAFYARQBSADIAMAAxADYAOwBpAG4AaQB0AGkAYQBsACAAYwBhAHQAYQBsAG8AZwA9AEIARABE
+AF8AUgBTAFMAOwB1AHMAZQByACAAaQBkAD0AUwBhADsAUABhAHMAcwB3AG8AcgBkAD0AQwBoAGEA
+cABhAHIAcgBpAHQAYQA7AAEBABFJAGQAXwBTAGUAcgBpAGUAACFGAGUAYwBoAGEAXwBpAG4AcwBl
+AHIAYwBjAGkAbwBuAAALRgBlAGMAaABhAAANVABpAHQAdQBsAG8AAAtWAGEAbABvAHIAAAdYAG0A
+bAAACVQARQBTAFQAABViAG0AOgBEAGEAdABhAFMAZQB0AAATYgBtADoAUwBlAHIAaQBlAHMAAA1U
+AEkAVABVAEwATwAAD0kARABTAEUAUgBJAEUAAA1iAG0AOgBPAGIAcwAAF1QASQBNAEUAXwBQAEUA
+UgBJAE8ARAAAE08AQgBTAF8AVgBBAEwAVQBFAAALZQBuAC0AVQBTAAFxUwBUAF8AYgBhAGEAZgBk
+ADgAYQA2ADUAYgAyAGMANAAyADUANgA5AGUAMgBkADUAMQBhAGIAMQA5ADUAOQA1ADYAOQAwAC4A
+UAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAHdQByAGkAAD11AHMAcABf
+AGkAaABtAF8AYwBvAG4AcwB1AGwAdABhAF8AZABhAHQAbwBzAF8AYgBhAG4AeABpAGMAbwAAD1MA
+RgA0ADMANwAxADgAABlJAE4AUwBFAFIAVAAgAEkATgBUAE8AIAAAgJVkAGIAbwAuAEQAYQB0AG8A
+cwBfAEIAYQBuAHgAaQBjAG8AKAAgAEkAZABfAFMAZQByAGkAZQAsACAARgBlAGMAaABhAF8AaQBu
+AHMAZQByAGMAYwBpAG8AbgAsACAARgBlAGMAaABhACwAIABUAGkAdAB1AGwAbwAsACAAVgBhAGwA
+bwByACwAIABYAG0AbAApACAAAICRVgBBAEwAVQBFAFMAKABAAF8ASQBkAF8AUwBlAHIAaQBlACwA
+QABfAEYAZQBjAGgAYQBfAGkAbgBzAGUAcgBjAGMAaQBvAG4ALAAgAEAAXwBGAGUAYwBoAGEALAAg
+AEAAXwBUAGkAdAB1AGwAbwAsACAAQABfAFYAYQBsAG8AcgAsACAAQABfAFgAbQBsACkAABVAAF8A
+SQBkAF8AUwBlAHIAaQBlAAAlQABfAEYAZQBjAGgAYQBfAGkAbgBzAGUAcgBjAGMAaQBvAG4AAA9A
+AF8ARgBlAGMAaABhAAARQABfAFQAaQB0AHUAbABvAAAPQABfAFYAYQBsAG8AcgAAC0AAXwBYAG0A
+bAAArfO400X1L0a12SDMIzRFSwAIt3pcVhk04IkGFRIdARIRBhUSIQESFAiJhF3NgIDMkQMgAAgE
+IAEBCAMgAA4EIAEBDgQgABExBSABARExBCAAETUFIAEBETUDIAABAgYIAgYOAwYRMQMGETUDKAAI
+AygADgQoABExBCgAETUDBhI5BCAAEjkEKAASOQMGEgwCBgIMIAISPRI9FRJBARJFCyACEkkOFRJB
+ARJFCiACCA4VEkEBEkUEIAEBAgUgAgEODgYgAgEOEk0HIAIBElESTQQgABIcBCAAEkkIIAAVEkEB
+EggDBhJVAwYSWQQAABJVBAAAElkFAAEBElkECAASVQQIABJZAwYSKAQAABIoBAgAEig8dQBzAHAA
+XwBpAGgAbQBfAGMAbwBuAHMAdQBsAHQAYQBfAGQAYQB0AG8AcwBfAGIAYQBuAHgAaQBjAG8ADlMA
+RgA0ADMANwAxADgAAwYSEAsgAgISSRUSQQESCAkgAQEVEkEBEggDBhEwBAAAAAAEAQAAABIBAAEA
+VA4ETmFtZQZyZXN1bHQGFRJBARJFCSAAFRGAlQETAAcVEYCVARJFBCAAEwAFIAASgJkGIAESRRJF
+AyAAAgsHAhJFFRGAlQESRQYgAgEOEjkFIAEBEj0FIAEIEkkJBwMSSRI9EoChBQcCEj0IIAEAE1N5
+c3RlbS5TZXJ2aWNlTW9kZWwHNC4wLjAuMAAAXwEAAgBUDglOYW1lc3BhY2UdaHR0cDovL3dzLmRn
+aWUuYmFueGljby5vcmcubXhUDhFDb25maWd1cmF0aW9uTmFtZRxTZXJ2aWNlUmVmZXJlbmNlMS5E
+Z2llV1NQb3J0HgEAAgBUDgZBY3Rpb24AVA4LUmVwbHlBY3Rpb24BKoEsAQADAFRVgIBTeXN0ZW0u
+U2VydmljZU1vZGVsLk9wZXJhdGlvbkZvcm1hdFN0eWxlLCBTeXN0ZW0uU2VydmljZU1vZGVsLCBW
+ZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYx
+OTM0ZTA4OQVTdHlsZQEAAABUAg1TdXBwb3J0RmF1bHRzAVRVflN5c3RlbS5TZXJ2aWNlTW9kZWwu
+T3BlcmF0aW9uRm9ybWF0VXNlLCBTeXN0ZW0uU2VydmljZU1vZGVsLCBWZXJzaW9uPTQuMC4wLjAs
+IEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQNVc2UBAAAA
+BSAAEoDFBiABARGAyQUgABKAzQYgAQERgNEGIAEBEYDVBSAAEoDZBQAAEoDdBiABARKA3QkHAxKA
+wRJNEhwFIAASgOEIAAESgOkRgO0JIAISgPEOEoDpBAcBEkkGFRJBARIIBxURgJUBEggFIAASgPUH
+IAESgPkdHBMHBhJJEggVEYCVARIIHRwRMRExBiABEoEBDgYgARKBBQgEIAEODgQAABExBQABETEO
+DQAEAg4RgQ0SgREQETUFIAEBEwAcBwsODhE1DhUSQQESCBKA/RKBARKBAQgSgQESCAUgABKBGQcg
+AgEOEoEZBAcBElUGIAEBEYEhCAEAAgAAAAAAAwAAAQUgABKBKQUgABKBLQYgARKBMRwDIAAcDQcE
+AhUSQQESCBIgEkkGAAECEoD5CgYVEoE1AhKA+QIFAAECEggJBhUSgTUCEggCBCABHA4EIAECHAQg
+AQIODAABFRKBQQESgPkSSQkVEoE1AhKA+QIFIAIBHBgUEAECHgAVEoFJAR4AFRKBNQIeAAIFCgES
+gPkEIAAdHAgVEoE1AhIIAgQKARIIBgcDDg4RNQYgARKBTQ4HIAIBDhGBUQQgAQEcJAcMEoFNEggV
+EkEBEkUSRRJFEkUSRRJFEkUVEYCVARIIETERMUcBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQu
+MAEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUQLk5FVCBGcmFtZXdvcmsgNCgBACNTVF9iYWFmZDhh
+NjViMmM0MjU2OWUyZDUxYWIxOTU5NTY5MAAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDE3AAAI
+AQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MB+FMAAAAAAAAAAAAADlQAAAAg
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAA
+AAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAABgAAIAAAAAA
+AAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAAsAMAAAAAAAAA
+AAAAsAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABALOm
+LBkAAAEAs6YsGT8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABl
+AEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACwBBADAAABAFMA
+dAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAOwCAAABADAAMAAwADAAMAA0AGIAMAAAAHAAJAAB
+AEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAFQAXwBiAGEAYQBmAGQAOABhADYA
+NQBiADIAYwA0ADIANQA2ADkAZQAyAGQANQAxAGEAYgAxADkANQA5ADUANgA5ADAAAABAAA8AAQBG
+AGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANgA0ADQANAAuADQAMgA2ADcANQAAAAAA
+cAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQAXwBiAGEAYQBmAGQAOABhADYANQBi
+ADIAYwA0ADIANQA2ADkAZQAyAGQANQAxAGEAYgAxADkANQA5ADUANgA5ADAALgBkAGwAbAAAAEgA
+EgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAg
+ACAAMgAwADEANwAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAFQA
+XwBiAGEAYQBmAGQAOABhADYANQBiADIAYwA0ADIANQA2ADkAZQAyAGQANQAxAGEAYgAxADkANQA5
+ADUANgA5ADAALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBUAF8A
+YgBhAGEAZgBkADgAYQA2ADUAYgAyAGMANAAyADUANgA5AGUAMgBkADUAMQBhAGIAMQA5ADUAOQA1
+ADYAOQAwAAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgA2ADQA
+NAA0AC4ANAAyADYANwA1AAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBu
+AAAAMQAuADAALgA2ADQANAA0AC4ANAAyADYANwA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAADAAAACA0AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
+          <Breakpoint
+            Enabled="True"
+            File="ScriptMain.cs"
+            Line="131"
+            Column="13" />
+          <Breakpoint
+            Enabled="True"
+            File="ScriptMain.cs"
+            Line="212"
+            Column="13" />
+          <Breakpoint
+            Enabled="True"
+            File="ScriptMain.cs"
+            Line="152"
+            Column="13" />
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql12">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="135.333333333334,42"
+          Id="Package\Tarea Script"
+          TopLeft="49.1666659340263,57.1999989771843" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
