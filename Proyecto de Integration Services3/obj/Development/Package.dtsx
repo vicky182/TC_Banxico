@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="127"
-  DTS:VersionGUID="{CCDC3932-C7E6-4E08-8630-63DD18E0CDC5}">
+  DTS:VersionBuild="133"
+  DTS:VersionGUID="{8FCA9FEF-2218-4FDB-B58F-EA612AB83F8C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,11 +29,11 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABRwkWiwFqdnNvgFxF79hlps3lpR/cnBAn6KJ60HAuU/wAAAAAOgAAAAAIAACAAAAAYLRLymB2n71xa+DeVEhDUakPVkE39tMDGNVk4tc44VhAAAAAhP+DnfMNNWinMsmZYH+mpQAAAANuPKtG+NklsmB8jV/siO8hUmKqvIwS0g4c2gRXu33tNrbd0VgMyrKuudTgUnSYgKZhRb9EVxoRo6fI09H7LvWQ</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB3nWZ/LIp6CGlelOdbNKs5DLQ79+2yxAVZfy06Hz2j0gAAAAAOgAAAAAIAACAAAAAN33h9Gi76axklH3IuaQA0qpkq+DjdoZG2gGBsfuZTABAAAACOjk92SI4nakarLRzZstKvQAAAAOVZHrXl1Ns4W79HL6v54ZUq2Du/doYxY6Y1riz1Iy+aFlCZe6CCgO6GGAYcQQOhBZWGuK8CeXlK4MMYWKq6xnE</DTS:Property>
             <DTS:Property
               DTS:Name="ProxyPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA2L+VZf+56DsD4RJA5svYdGj9SnVlYUttsBEIJY7Ty/AAAAAAOgAAAAAIAACAAAAC/aUP+er+W5lEqPaqpXvsJMCtSncw9IxcTB4ocf3wIvhAAAABt4wZq5iqHrZts5IKVn2qwQAAAAJo+7q5bQH4lAxeQL8eZSY+j/7OCsr624PAYh1xSoz83tH5EFY6vuGM6CHNFsrHD8KPp4oz/M/bADa2jsOnUJcc</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABKLs5t3ha9S88G1WGNJ7/pHav6s6DpNmrS+lR30x0isgAAAAAOgAAAAAIAACAAAAA324P2SzzZJWVl1dc8NHDnH0X15V/cEYxERcFKd+iu2xAAAADfL+ow1yXte7c45JqRDWN4QAAAAE/sIv/RDZkgjyb/e7K3M05tTFnBGz2pRLVa9MPuxbkG9U0AWmPMXMR01ZvpewDBma+Oj6uFZFAkLXOqpELcWmo</DTS:Property>
           </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -51,11 +51,11 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdgJOlR7K4ERZWLFgHHP61xR6tloANziVDvDrFJoqZLAAAAAAOgAAAAAIAACAAAACKpdsGGEia7yiuMWYulXFV8yj7Q7r3TQDz/xClvlQbdhAAAACcOnkNDDfkC7ozpXG/epyGQAAAAB1PvVK44KKcUBxE+aLYMUvnBtxXgi0kRc1ZzjgRZUedMfZWfhwvYZYdERu+yGmMtAcavrb5BlkuFIA9p0RCcSs</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACPR8scSi9TbjGN/F9BEa0iqaHEtIOfRgEz1f/BpuVTqAAAAAAOgAAAAAIAACAAAABE+oXN2qMzCrygxQBP/rkCY95kTG442vKpMqqgWqtChhAAAAAl/otcc2Ydy1jWZb59XdZ5QAAAABfAUmKgELFTNc0oBmaqDKinVsRlMSed2ACuYeUpyl23oAIpnVNntFhAci3nPuvi3tvnee31Ygh9Ov/NDPuTYaE</DTS:Property>
             <DTS:Property
               DTS:Name="ProxyPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA8/q+m9TKoItEqAvnw27N0asaPJOLZ2C8aYa4IhgORCwAAAAAOgAAAAAIAACAAAACN9wLjP2xjGLo+4eEGZdL+de3YjMe6WolLHYHMbbMMwxAAAAAU+hCcmInzH4jW7epMkPoHQAAAAHQw6sve/lmqyZdFCaLNyJs40b7c4mr8amTYqLuVOOBAQGPLr2hzZhqtfNWGC1i5CIEMi6XnSFFWEuUXD5t+35s</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAln8hPuJ3U0KKEB3oz6PZVQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChi7JTPiBGdDO56Ixlm80FiTdi1CGQ0cpFR2SsMElliAAAAAAOgAAAAAIAACAAAAD+GDeWyRK01J19KxF7W6TCIDkiDbKKc418bmuBn+AC7BAAAAB2GdEDVz+zbtBWWSWhBXwCQAAAAKL45+XnEDRAkzHNtz1yOmlBi1YeXc2eR0qiS6Qcl2Eyl+CMCp9msV/k1YCUQZq2NzFEeTGeJ43gfNXo5DfRm1o</DTS:Property>
           </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -326,17 +326,6 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690.Properties {
 		<msb:File Include="Banxico.cs"/>
 		<msb:File Include="ServiceBanxico.cs"/>
 		<msb:File Include="ContextDB\ConexionBD.cs"/>
-		<msb:Breakpoint Include="2143e1385b1c41b8ac5db14edcc81254">
-			<msb:FileName>ScriptMain.cs</msb:FileName>
-			<msb:ColumnNumber>13</msb:ColumnNumber>
-			<msb:Enabled>True</msb:Enabled>
-			<msb:LineNumber>131</msb:LineNumber>
-			<msb:Condition></msb:Condition>
-			<msb:ConditionType>1</msb:ConditionType>
-			<msb:Language>C#</msb:Language>
-			<msb:HitCountType>1</msb:HitCountType>
-			<msb:HitCountTarget>1</msb:HitCountTarget>
-		</msb:Breakpoint>
 		<msb:Breakpoint Include="a09f9d00839c47e3bac0e9389770c787">
 			<msb:FileName>ScriptMain.cs</msb:FileName>
 			<msb:ColumnNumber>13</msb:ColumnNumber>
@@ -348,13 +337,13 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690.Properties {
 			<msb:HitCountType>1</msb:HitCountType>
 			<msb:HitCountTarget>1</msb:HitCountTarget>
 		</msb:Breakpoint>
-		<msb:Breakpoint Include="986b678ab8a443bcaa938205114185bc">
+		<msb:Breakpoint Include="1774afedc713470b8c6b17a1c2a55af1">
 			<msb:FileName>ScriptMain.cs</msb:FileName>
+			<msb:LineNumber>152</msb:LineNumber>
 			<msb:ColumnNumber>13</msb:ColumnNumber>
 			<msb:Enabled>True</msb:Enabled>
-			<msb:LineNumber>152</msb:LineNumber>
-			<msb:Condition></msb:Condition>
 			<msb:ConditionType>1</msb:ConditionType>
+			<msb:Condition></msb:Condition>
 			<msb:Language>C#</msb:Language>
 			<msb:HitCountType>1</msb:HitCountType>
 			<msb:HitCountTarget>1</msb:HitCountTarget>
@@ -813,7 +802,7 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
     /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
     /// or parent of this class.
     /// </summary>
-    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute] 
     public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
     {
         #region Help:  Using Integration Services variables and parameters in a script
@@ -923,7 +912,7 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
             if (dtCurrent.Rows.Count == 0) return false;
             //Obtiene el valor del  FIX en la BD
             var idSerieCurrent = dtCurrent.AsEnumerable().
-                FirstOrDefault(x => x["Id_Serie"].Equals(idSerie)).
+                FirstOrDefault(x => x["Id_Serie"].Equals(idSerie)). 
                 ItemArray[5].ToString();
 
             var testIdSerie = lstSw.FirstOrDefault(s => s.Id_Serie.Equals(idSerie)).Valor.ToString();
@@ -1120,7 +1109,7 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
             uri = _uri;
         }
 
-        private DgieWSPortClient Binding() 
+        private DgieWSPortClient Binding()
         {
 
             var binding = new BasicHttpBinding();
@@ -1137,12 +1126,28 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
             return soapClient;
         }
 
-        private string GetXml() 
+        private string GetXml()
         {
-            return Binding().tiposDeCambioBanxico();
+            //Binding().tiposDeCambioBanxico();
+//            string xmlTemp = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?> <CompactData xmlns=\"http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message\" xmlns:bm=\"http://www.banxico.org.mx/structure/key_families/dgie/sie/series/compact\" xmlns:compact=\"http://www.SDMX.org/resources/SDMXML/schemas/v1_0/compact\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd http://www.banxico.org.mx/structure/key_families/dgie/sie/series/compact BANXICO_DGIE_SIE_Compact.xsd http://www.SDMX.org/resources/SDMXML/schemas/v1_0/compact SDMXCompactData.xsd\" > <Header>   <ID>TIPOSDECAMBIO</ID>   <Test>false</Test>   <Truncated>false</Truncated>   <Name xml:lang=\"sp\">Tipos de Cambio</Name>   <Prepared>2017-08-24 00:00:10.212</Prepared>   <Sender id=\"BANXICO\">   " +
+// "<Name xml:lang=\"sp\">Banco de México</Name>" +
+// "<Contact>    <Name xml:lang=\"sp\">Subgerencia de Desarrollo de Sistemas</Name>    <Telephone>(01 55)52372678</Telephone>    </Contact>   </Sender> " +
+// "<DataSetAction>Update</DataSetAction> " +
+// "<Extracted>2017-08-24 00:00:10.212</Extracted>  " +
+// "</Header>  <bm:DataSet>   " +
+// "<bm:SiblingGroup BANXICO_FREQ=\"Dia\" TIME_FORMAT=\"P1D\"/>   " +
+// "<bm:Series TITULO=\"Tipo de cambio pesos por dólar E.U.A. Tipo de cambio para solventar obligaciones denominadas en moneda extranjera Fecha de liquidación\" IDSERIE=\"SF60653\" BANXICO_FREQ=\"Dia\" BANXICO_FIGURE_TYPE=\"TipoCambio\" BANXICO_UNIT_TYPE=\"PesoxDoll\">   " +
+// "<bm:Obs TIME_PERIOD=\"2017-08-24\" OBS_VALUE=\"17.6458\"/>   " +
+// "</bm:Series>   " +
+// "<bm:Series TITULO=\"Tipo de cambio                                          Pesos por dólar E.U.A. Tipo de cambio para solventar obligaciones denominadas en moneda extranjera Fecha de determinación (FIX)\" IDSERIE=\"SF43718\" BANXICO_FREQ=\"Dia\" BANXICO_FIGURE_TYPE=\"TipoCambio\" BANXICO_UNIT_TYPE=\"PesoxDoll\">    " +
+// "<bm:Obs TIME_PERIOD=\"2017-08-23\" OBS_VALUE=\"17.7113\"/>   </bm:Series>   <bm:Series TITULO=\"Cotización de las divisas que conforman la canasta del DEG Respecto al peso mexicano Euro\" IDSERIE=\"SF46410\" BANXICO_FREQ=\"Dia\" BANXICO_FIGURE_TYPE=\"TipoCambio\" BANXICO_UNIT_TYPE=\"Peso\">    <bm:Obs TIME_PERIOD=\"2017-08-23\" OBS_VALUE=\"20.8701\"/>   </bm:Series>   <bm:Series TITULO=\"Cotización de la divisa Respecto al peso mexicano Dólar Canadiense\" IDSERIE=\"SF60632\" BANXICO_FREQ=\"Dia\" BANXICO_FIGURE_TYPE=\"TipoCambio\" BANXICO_UNIT_TYPE=\"Peso\">    <bm:Obs TIME_PERIOD=\"2017-08-23\" OBS_VALUE=\"14.1084\"/>   </bm:Series>   <bm:Series TITULO=\"Cotización de las divisas que conforman la canasta del DEG Respecto al peso mexicano Yen japonés\" IDSERIE=\"SF46406\" BANXICO_FREQ=\"Dia\" BANXICO_FIGURE_TYPE=\"TipoCambio\" BANXICO_UNIT_TYPE=\"Peso\">    <bm:Obs TIME_PERIOD=\"2017-08-23\" OBS_VALUE=\"0.1619\"/>   </bm:Series>   <bm:Series TITULO=\"Cotización de las divisas que conforman la canasta del DEG Respecto al peso mexicano Libra esterlina\" IDSERIE=\"SF46407\" BANXICO_FREQ=\"Dia\" BANXICO_FIGURE_TYPE=\"TipoCambio\" BANXICO_UNIT_TYPE=\"Peso\">    " +
+//"<bm:Obs TIME_PERIOD=\"2017-08-23\" OBS_VALUE=\"22.6846\"/>  " +
+// "</bm:Series>  </bm:DataSet> </CompactData> ";
+            return Binding().tiposDeCambioBanxico(); ;
         }
 
-        private DataTable CreateTable() {
+        private DataTable CreateTable()
+        {
 
             DataTable dt_banxico = new DataTable();
             dt_banxico.Clear();
@@ -1157,7 +1162,7 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
             return dt_banxico;
         }
 
-        public DataTable GetTableExchangeRates() 
+        public DataTable GetTableExchangeRates()
         {
             var dt_banxico = CreateTable();
 
@@ -1176,7 +1181,7 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
             return dt_banxico;
         }
 
-        public List<Banxico> GetListExchangeRates() 
+        public List<Banxico> GetListExchangeRates()
         {
             string Id_Serie = "";
             string Titulo = "";
@@ -1494,7 +1499,7 @@ namespace ST_baafd8a65b2c42569e2d51ab19595690
           <BinaryItem
             Name="ST_baafd8a65b2c42569e2d51ab19595690.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAEdnnlkAAAAAAAAAAOAAAiELAQsAADYAAAAIAAAAAAAAHlQA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDABaap1kAAAAAAAAAAOAAAiELAQsAADYAAAAIAAAAAAAAHlQA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACgAAAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAANBTAABLAAAAAGAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1607,8 +1612,8 @@ AxMBiAJAAwsBaQJAAxMBiAJgAwsBaQJgAxMBiALgBnMAcgEAB3MAcgG5AdgB4gHqAw0ELwR1BKAE
 0ARaBXUFAgABAAMACAAJAAkACgALAAAAGgRbAAAAHQRfAAAAJgRjAAAANwRjAAAAPQRfAAAARARo
 AAAASgRfAAAAmAR2AAAA6wXrAAAAZAbwAAAAiAb+AAIAAQADAAEAAgADAAEABAAFAAIAAwAFAAEA
 BgAHAAIABQAHAAIABwAJAAEACAAJAAEACgALAAIACQALAAIACwANAAEADAANAAEADgAPAAIADQAP
-AAIAEQARAAIALAATAAIALQAVAAEALgAVAAIALwAXAAoAEQCKAZsBEgQZBBwFTAUEgAAAAQAAACwZ
-s6YAAAAAAAA6AAAABAAAAAAAAAAAAAAAAQBwAQAAAAAEAAAAAAAAAAAAAAABAJMBAAAAAAQAAAAA
+AAIAEQARAAIALAATAAIALQAVAAEALgAVAAIALwAXAAoAEQCKAZsBEgQZBBwFTAUEgAAAAQAAADMZ
+26IAAAAAAAA6AAAABAAAAAAAAAAAAAAAAQBwAQAAAAAEAAAAAAAAAAAAAAABAJMBAAAAAAQAAAAA
 AAAAAAAAAAEAeQEAAAAADAAAAAAAAAAAAAAAGABPAgAAAAAEAAAAAAAAAAAAAAABAE4EAAAAAAQA
 AAAAAAAAAAAAAAEAswwAAAAADAAAAAAAAAAAAAAAGAAbDgAAAAAEAAAAAAAAAAAAAAABAEgPAAAA
 AAQAAAAAAAAAAAAAAAEAoQ8AAAAAAAAAAAEAAAAwEAAADAALAL8AQQW/AFUFAAAAAAA8TW9kdWxl
@@ -1705,7 +1710,7 @@ QABfAEYAZQBjAGgAYQBfAGkAbgBzAGUAcgBjAGMAaQBvAG4ALAAgAEAAXwBGAGUAYwBoAGEALAAg
 AEAAXwBUAGkAdAB1AGwAbwAsACAAQABfAFYAYQBsAG8AcgAsACAAQABfAFgAbQBsACkAABVAAF8A
 SQBkAF8AUwBlAHIAaQBlAAAlQABfAEYAZQBjAGgAYQBfAGkAbgBzAGUAcgBjAGMAaQBvAG4AAA9A
 AF8ARgBlAGMAaABhAAARQABfAFQAaQB0AHUAbABvAAAPQABfAFYAYQBsAG8AcgAAC0AAXwBYAG0A
-bAAArfO400X1L0a12SDMIzRFSwAIt3pcVhk04IkGFRIdARIRBhUSIQESFAiJhF3NgIDMkQMgAAgE
+bAAA/hWtUQrWGkaeqSLESQGQtQAIt3pcVhk04IkGFRIdARIRBhUSIQESFAiJhF3NgIDMkQMgAAgE
 IAEBCAMgAA4EIAEBDgQgABExBSABARExBCAAETUFIAEBETUDIAABAgYIAgYOAwYRMQMGETUDKAAI
 AygADgQoABExBCgAETUDBhI5BCAAEjkEKAASOQMGEgwCBgIMIAISPRI9FRJBARJFCyACEkkOFRJB
 ARJFCiACCA4VEkEBEkUEIAEBAgUgAgEODgYgAgEOEk0HIAIBElESTQQgABIcBCAAEkkIIAAVEkEB
@@ -1745,13 +1750,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAABgAAIAAAAAA
 AAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAAsAMAAAAAAAAA
-AAAAsAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABALOm
-LBkAAAEAs6YsGT8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABl
+AAAAsAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABANui
+MxkAAAEA26IzGT8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABl
 AEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACwBBADAAABAFMA
 dAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAOwCAAABADAAMAAwADAAMAA0AGIAMAAAAHAAJAAB
 AEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAFQAXwBiAGEAYQBmAGQAOABhADYA
 NQBiADIAYwA0ADIANQA2ADkAZQAyAGQANQAxAGEAYgAxADkANQA5ADUANgA5ADAAAABAAA8AAQBG
-AGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANgA0ADQANAAuADQAMgA2ADcANQAAAAAA
+AGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANgA0ADUAMQAuADQAMQA2ADkAMQAAAAAA
 cAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQAXwBiAGEAYQBmAGQAOABhADYANQBi
 ADIAYwA0ADIANQA2ADkAZQAyAGQANQAxAGEAYgAxADkANQA5ADUANgA5ADAALgBkAGwAbAAAAEgA
 EgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAg
@@ -1760,8 +1765,8 @@ XwBiAGEAYQBmAGQAOABhADYANQBiADIAYwA0ADIANQA2ADkAZQAyAGQANQAxAGEAYgAxADkANQA5
 ADUANgA5ADAALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBUAF8A
 YgBhAGEAZgBkADgAYQA2ADUAYgAyAGMANAAyADUANgA5AGUAMgBkADUAMQBhAGIAMQA5ADUAOQA1
 ADYAOQAwAAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgA2ADQA
-NAA0AC4ANAAyADYANwA1AAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBu
-AAAAMQAuADAALgA2ADQANAA0AC4ANAAyADYANwA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+NQAxAC4ANAAxADYAOQAxAAAAAABIAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBu
+AAAAMQAuADAALgA2ADQANQAxAC4ANAAxADYAOQAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1780,11 +1785,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
-          <Breakpoint
-            Enabled="True"
-            File="ScriptMain.cs"
-            Line="131"
-            Column="13" />
           <Breakpoint
             Enabled="True"
             File="ScriptMain.cs"
